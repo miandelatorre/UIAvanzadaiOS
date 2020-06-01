@@ -44,6 +44,17 @@ class TopicsViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
 
+        let button = UIButton(frame: CGRect(x: 296, y: 653, width: 64, height: 64))
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 32
+        button.setImage(UIImage.init(named: "icoNew"), for: .normal)
+        
+        self.view.addSubview(button)
+        
+        guard let superview = view.superview else { return }
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.bottomAnchor)
+        ])
 
         let rightBarButtonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(plusButtonTapped))
         rightBarButtonItem.tintColor = .black
