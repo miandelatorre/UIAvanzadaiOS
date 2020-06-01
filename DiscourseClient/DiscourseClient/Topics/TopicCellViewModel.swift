@@ -13,7 +13,7 @@ protocol TopicCellViewModelViewDelegate: class {
 }
 
 /// ViewModel que representa un topic en la lista
-class TopicCellViewModel {
+class TopicCellViewModel: CellViewModel {
     weak var viewDelegate: TopicCellViewModelViewDelegate?
     let topic: Topic
     var lastPosterUsername: String?
@@ -32,6 +32,8 @@ class TopicCellViewModel {
         comentariosLabelText = String(topic.postsCount)
         visitasLabelText = String(topic.posters.count)
         fechaLabelText = topic.lastPostedAt
+        
+        super.init()
     }
     
     func setImage(){

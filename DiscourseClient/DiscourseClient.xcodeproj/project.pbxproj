@@ -69,6 +69,10 @@
 		62D577B5242FC6EC00268ADC /* UpdateUserNameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D577B4242FC6EC00268ADC /* UpdateUserNameRequest.swift */; };
 		62D577B7242FC76300268ADC /* UpdateUserNameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D577B6242FC76300268ADC /* UpdateUserNameResponse.swift */; };
 		AE19D1072483006C00EA2F7D /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19D1062483006C00EA2F7D /* UIFont+Additions.swift */; };
+		AE19D10A24857C8D00EA2F7D /* TopicOfTheDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19D10824857C8D00EA2F7D /* TopicOfTheDayCell.swift */; };
+		AE19D10B24857C8D00EA2F7D /* TopicOfTheDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE19D10924857C8D00EA2F7D /* TopicOfTheDayCell.xib */; };
+		AE19D10D24857CC700EA2F7D /* TopicOfTheDayCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19D10C24857CC700EA2F7D /* TopicOfTheDayCellViewModel.swift */; };
+		AE19D10F248587C100EA2F7D /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19D10E248587C100EA2F7D /* CellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +140,10 @@
 		62D577B4242FC6EC00268ADC /* UpdateUserNameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserNameRequest.swift; sourceTree = "<group>"; };
 		62D577B6242FC76300268ADC /* UpdateUserNameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserNameResponse.swift; sourceTree = "<group>"; };
 		AE19D1062483006C00EA2F7D /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = SOURCE_ROOT; };
+		AE19D10824857C8D00EA2F7D /* TopicOfTheDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicOfTheDayCell.swift; sourceTree = "<group>"; };
+		AE19D10924857C8D00EA2F7D /* TopicOfTheDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicOfTheDayCell.xib; sourceTree = "<group>"; };
+		AE19D10C24857CC700EA2F7D /* TopicOfTheDayCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicOfTheDayCellViewModel.swift; sourceTree = "<group>"; };
+		AE19D10E248587C100EA2F7D /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,9 +279,13 @@
 				627DC5C223E5FEE4006D8615 /* TopicsViewModel.swift */,
 				627DC5C423E5FEFD006D8615 /* TopicsViewController.swift */,
 				627DC5C723E60384006D8615 /* TopicsDataManager.swift */,
+				AE19D10E248587C100EA2F7D /* CellViewModel.swift */,
 				62015CB623EF04C200673EBB /* TopicCellViewModel.swift */,
 				62015CB823EF084C00673EBB /* TopicCell.swift */,
 				62015CB923EF084C00673EBB /* TopicCell.xib */,
+				AE19D10824857C8D00EA2F7D /* TopicOfTheDayCell.swift */,
+				AE19D10924857C8D00EA2F7D /* TopicOfTheDayCell.xib */,
+				AE19D10C24857CC700EA2F7D /* TopicOfTheDayCellViewModel.swift */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -406,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				627DC5B523E5F581006D8615 /* LaunchScreen.storyboard in Resources */,
+				AE19D10B24857C8D00EA2F7D /* TopicOfTheDayCell.xib in Resources */,
 				627DC5B223E5F581006D8615 /* Assets.xcassets in Resources */,
 				62015CBB23EF084C00673EBB /* TopicCell.xib in Resources */,
 				626F76DF242FA491006610C8 /* CategoryCell.xib in Resources */,
@@ -425,10 +438,12 @@
 				626F76E7242FAA57006610C8 /* UsersViewModel.swift in Sources */,
 				626F7706242FBB2B006610C8 /* UserDataManager.swift in Sources */,
 				626F76DE242FA491006610C8 /* CategoryCell.swift in Sources */,
+				AE19D10A24857C8D00EA2F7D /* TopicOfTheDayCell.swift in Sources */,
 				626F76D7242FA313006610C8 /* CategoryCellViewModel.swift in Sources */,
 				626F76E5242FA673006610C8 /* CategoriesRequest.swift in Sources */,
 				626F76ED242FAC86006610C8 /* UserCellViewModel.swift in Sources */,
 				627DC5BE23E5F7A0006D8615 /* Coordinator.swift in Sources */,
+				AE19D10F248587C100EA2F7D /* CellViewModel.swift in Sources */,
 				627DC5C323E5FEE4006D8615 /* TopicsViewModel.swift in Sources */,
 				62D577B7242FC76300268ADC /* UpdateUserNameResponse.swift in Sources */,
 				62015CC023EF0F8100673EBB /* TopicDetailViewModel.swift in Sources */,
@@ -453,6 +468,7 @@
 				62015CDF23EF30E600673EBB /* CategoriesCoordinator.swift in Sources */,
 				62015CD223EF205100673EBB /* CreateTopicRequest.swift in Sources */,
 				62015CC223EF0FA000673EBB /* TopicDetailViewController.swift in Sources */,
+				AE19D10D24857CC700EA2F7D /* TopicOfTheDayCellViewModel.swift in Sources */,
 				626F76F3242FACE4006610C8 /* UsersDataManager.swift in Sources */,
 				62015CDD23EF302900673EBB /* CategoriesViewController.swift in Sources */,
 				627DC5C823E60384006D8615 /* TopicsDataManager.swift in Sources */,
