@@ -56,9 +56,6 @@ class TopicsViewController: UIViewController {
             button.bottomAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.bottomAnchor)
         ])
 
-        let rightBarButtonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(plusButtonTapped))
-        rightBarButtonItem.tintColor = .black
-        navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 
     override func viewDidLoad() {
