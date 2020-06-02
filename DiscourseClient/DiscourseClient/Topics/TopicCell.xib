@@ -97,7 +97,7 @@
                                             <constraint firstAttribute="height" constant="20" id="Gu8-pi-tOS"/>
                                             <constraint firstAttribute="width" constant="60" id="jT8-93-8hc"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <color key="textColor" name="brownGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
