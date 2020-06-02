@@ -12,9 +12,12 @@ class TopicOfTheDayCell: UITableViewCell {
 
     var viewModel: TopicOfTheDayCellViewModel?
     
+    @IBOutlet weak var yellowView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        yellowView.layer.cornerRadius = 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

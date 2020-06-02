@@ -20,6 +20,10 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnt-Rv-qNk">
                         <rect key="frame" x="16" y="25" width="343" height="103"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oin" translatesAutoresizingMaskIntoConstraints="NO" id="r4l-71-Id3">
+                                <rect key="frame" x="306" y="7" width="30" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="k90-1K-xVF">
                                 <rect key="frame" x="32" y="8" width="279" height="87"/>
                                 <subviews>
@@ -34,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discourse Setup The first paragraph of this pinned topic..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYl-OJ-ows">
-                                        <rect key="frame" x="0.0" y="34" width="252" height="53"/>
+                                        <rect key="frame" x="0.0" y="34" width="442.5" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="Ikn-RU-tfO"/>
                                             <constraint firstAttribute="width" constant="252" id="hMF-EA-8Km"/>
@@ -67,10 +71,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="yellowView" destination="fnt-Rv-qNk" id="pFO-ni-ukf"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="148.66071428571428"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="oin" width="30" height="35"/>
         <namedColor name="tangerine">
             <color red="0.95300000905990601" green="0.56499999761581421" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
